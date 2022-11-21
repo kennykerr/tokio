@@ -98,7 +98,7 @@ use self::doc::*;
 /// # Ok(()) }
 /// ```
 ///
-/// [`ERROR_PIPE_BUSY`]: https://docs.rs/windows-sys/*/windows_sys/Win32/Foundation/constant.ERROR_PIPE_BUSY.html
+/// [`ERROR_PIPE_BUSY`]: windows_sys::Win32::Foundation::ERROR_PIPE_BUSY
 /// [Windows named pipe]: https://docs.microsoft.com/en-us/windows/win32/ipc/named-pipes
 #[derive(Debug)]
 pub struct NamedPipeServer {
