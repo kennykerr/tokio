@@ -915,7 +915,7 @@ impl AsRawHandle for NamedPipeServer {
 /// let client = loop {
 ///     match ClientOptions::new().open(PIPE_NAME) {
 ///         Ok(client) => break client,
-///         Err(e) if e.raw_os_error() == Some(winerror::ERROR_PIPE_BUSY as i32) => (),
+///         Err(e) if e.raw_os_error() == Some(winerror::ERROR_PIPE_BUSY_XXXX as i32) => (),
 ///         Err(e) => return Err(e),
 ///     }
 ///
